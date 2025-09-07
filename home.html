@@ -1,14 +1,17 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KHAN BROTHERS</title>
+    <link rel="icon" type="image/x-icon" href="khan brother logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900"
     />
-    <title>KHAN BROTHERS</title>
-    <link rel="icon" type="image/x-icon" href="khan brother logo.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
     <style>
@@ -35,247 +38,152 @@
     </style>
   </head>
 
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
-      style='font-family: "Work Sans", "Noto Sans", sans-serif;'
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <!-- Header -->
-        <header
-          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0f0] px-10 py-3"
-        >
-          <div class="flex items-center gap-4 text-[#181111]">
-            <h2
-              class="text-[#181111] text-lg font-bold leading-tight tracking-[-0.015em]"
-            >
-              <img src="khan brother logo.png" width="118" height="100" alt="">
-            </h2>
+  <body class="font-[Work Sans] bg-white overflow-x-hidden">
+    <div class="flex flex-col min-h-screen">
+      <!-- Header -->
+      <header class="flex items-center justify-between border-b px-4 py-3 md:px-10">
+        <div class="flex items-center gap-4">
+          <img src="khan brother logo.png" class="w-28 md:w-32" alt="Logo" />
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex gap-8">
+          <a class="relative text-[#181111] text-sm font-medium group" href="home.html">HOME</a>
+          <a class="relative text-[#181111] text-sm font-medium group" href="services.html">SERVICES</a>
+          <a class="relative text-[#181111] text-sm font-medium group" href="aboutus.html">ABOUT</a>
+          <a class="relative text-[#181111] text-sm font-medium group" href="contactus.html">CONTACT</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </header>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden flex-col bg-white border-t md:hidden">
+        <a href="home.html" class="px-4 py-2 border-b">HOME</a>
+        <a href="services.html" class="px-4 py-2 border-b">SERVICES</a>
+        <a href="aboutus.html" class="px-4 py-2 border-b">ABOUT</a>
+        <a href="contactus.html" class="px-4 py-2">CONTACT</a>
+      </div>
+
+      <!-- Hero -->
+      <div class="px-4 md:px-10 lg:px-20 flex flex-1 justify-center py-5">
+        <div class="flex flex-col max-w-[960px] flex-1">
+          <div class="@container">
+            <div class="@[480px]:p-4">
+              <div
+                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAHcLylKGnJBg7j-UbicDrkU3vXtmI5BTXsvvzHQKfPTGK8o0_rFVzX8hiJvJq9I8JszlcvQWGWhguUhMMwNYOJyF2RuKQL3vqpwrd0xqlefm_v5a9rssHP8dRNtiUTMixt50feJxNfp_HmFiKUj6holOeLQRcUIehciR2ZDP3bRmVKNuEc2VfU5fR85J88oPvaimDhP5dUX4PPe0RQnzX74YohWXoiVumnBV6RZ6p6iudiiO8RjYTTKtknPdqMApx2l66PbPZZ8AI");'
+              >
+                <div class="flex flex-col gap-2 text-left">
+                  <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                    Welcome To Khan Brothers
+                  </h1>
+                  <h2 class="text-white text-sm sm:text-base max-w-xl">
+                    We specialize in seamless import and export solutions,
+                    connecting businesses worldwide with efficiency and
+                    reliability.
+                  </h2>
+                </div>
+                <a
+                  href="services.html"
+                  class="mt-4 flex items-center justify-center rounded-full h-10 sm:h-12 px-6 bg-[#e71212] text-white text-sm sm:text-base font-bold"
+                >Learn More</a>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a
-                class="relative text-[#181111] text-sm font-medium leading-normal group"
-                href="home.html"
-                >HOME</a
-              >
-              <a
-                class="relative text-[#181111] text-sm font-medium leading-normal group"
-                href="services.html"
-                >SERVICES</a
-              >
-              <a
-                class="relative text-[#181111] text-sm font-medium leading-normal group"
-                href="aboutus.html"
-                >ABOUT</a
-              >
-              <a
-                class="relative text-[#181111] text-sm font-medium leading-normal group"
-                href="contactus.html"
-                >CONTACT</a
-              >
-            </div>
+
+          <!-- Services Section -->
+          <div class="flex flex-col gap-6 px-4 py-10">
+            <h1 class="text-[#181111] text-2xl md:text-4xl font-bold">Comprehensive Services</h1>
+            <p class="text-[#181111] text-base max-w-[720px]">
+              We offer a full suite of import and export services tailored to your business needs.
+            </p>
           </div>
-        </header>
 
-        <!-- Hero -->
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAHcLylKGnJBg7j-UbicDrkU3vXtmI5BTXsvvzHQKfPTGK8o0_rFVzX8hiJvJq9I8JszlcvQWGWhguUhMMwNYOJyF2RuKQL3vqpwrd0xqlefm_v5a9rssHP8dRNtiUTMixt50feJxNfp_HmFiKUj6holOeLQRcUIehciR2ZDP3bRmVKNuEc2VfU5fR85J88oPvaimDhP5dUX4PPe0RQnzX74YohWXoiVumnBV6RZ6p6iudiiO8RjYTTKtknPdqMApx2l66PbPZZ8AI");'
-                >
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Welcome To Khan Brothers
-                    </h1>
-                    <h2
-                      class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
-                    >
-                      We specialize in seamless import and export solutions,
-                      connecting businesses worldwide with efficiency and
-                      reliability.
-                    </h2>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e71212] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
-                    <a href="services.html" class="truncate">Learn More</a>
-                  </button>
+          <!-- Expertise Section -->
+          <div class="flex flex-col gap-6 px-4 py-10">
+            <h1 class="text-[#181111] text-2xl md:text-4xl font-bold">Our Expertise</h1>
+            <p class="text-[#181111] text-base max-w-[720px]">
+              With years of experience, we ensure your goods are handled with the utmost care and professionalism.
+            </p>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <!-- Card 1 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full aspect-video bg-cover bg-center rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfp_WUDlTUDxwDvHW4L-8_6vvmLkBrv1s7zKnzrIeeZ2dJySFAZ3XX4TY9sDwVoP2f6vxfMGC0WEhLM8GjHBfX_HaHV_tFW8aKXJvfNBJqpA9YnG0PAsA51cvXA38cd7EV83UNbUTQV1GOfXiXpzoA3PrIvfASbxrgd5b2vNQqV-UpMSXgmZN9PLUtasi7AZrN4gFboa5NsaTHgn2mDZre_lhjkiUyKq9Ey8Hkjg81er53KdGSzCYYn-ZgWpTe5PDc3kQqoIsGl2RU");'></div>
+                <div>
+                  <p class="text-[#181111] font-medium">Warehousing</p>
+                  <p class="text-[#896161] text-sm">Secure and efficient warehousing solutions for your goods.</p>
                 </div>
               </div>
-            </div>
 
-            <!-- Services Section -->
-            <div class="flex flex-col gap-10 px-4 py-10 @container">
-              <div class="flex flex-col gap-4">
-                <h1
-                  class="text-[#181111] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                >
-                  Comprehensive Services
-                </h1>
-                <p
-                  class="text-[#181111] text-base font-normal leading-normal max-w-[720px]"
-                >
-                  We offer a full suite of import and export services tailored
-                  to your business needs.
-                </p>
-              </div>
-              <!-- (Your services cards stay same here) -->
-            </div>
-
-            <!-- Expertise Section -->
-            <div class="flex flex-col gap-10 px-4 py-10 @container">
-              <div class="flex flex-col gap-4">
-                <h1
-                  class="text-[#181111] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                >
-                  Our Expertise
-                </h1>
-                <p
-                  class="text-[#181111] text-base font-normal leading-normal max-w-[720px]"
-                >
-                  With years of experience, we ensure your goods are handled
-                  with the utmost care and professionalism.
-                </p>
+              <!-- Card 2 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full aspect-video bg-cover bg-center rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMZA39JxZrghang0RWlWGamHSmjkDbYxk4enFJmjuVTEE61Ttrm69Sr0mopk-s6_5xoYGwjomuHZYoPQn8gcpmKHfW2Pr6WB_YeZKKgGljWrdp6poGjM02Tk6QKkvYiRDhcoGNZvwYFUH1_ezvcgMR8cHExOzmxSZ_fpLgSTkn0ex4Yydr3ykhDd3KzobIrT-v-FM_bSk_BgX6kR3tfQ9LV1aqyx_UgAPsynYzXOS7Z__IKDyi1tN8QU7GRT0LsDiNiHXmwVqq1rXR");'></div>
+                <div>
+                  <p class="text-[#181111] font-medium">Ocean Freight</p>
+                  <p class="text-[#896161] text-sm">Reliable and cost-effective ocean freight services to global destinations.</p>
+                </div>
               </div>
 
-              <!-- 3x2 Grid (6 Cards) -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <!-- Card 1 -->
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfp_WUDlTUDxwDvHW4L-8_6vvmLkBrv1s7zKnzrIeeZ2dJySFAZ3XX4TY9sDwVoP2f6vxfMGC0WEhLM8GjHBfX_HaHV_tFW8aKXJvfNBJqpA9YnG0PAsA51cvXA38cd7EV83UNbUTQV1GOfXiXpzoA3PrIvfASbxrgd5b2vNQqV-UpMSXgmZN9PLUtasi7AZrN4gFboa5NsaTHgn2mDZre_lhjkiUyKq9Ey8Hkjg81er53KdGSzCYYn-ZgWpTe5PDc3kQqoIsGl2RU");'
-                  ></div>
-                  <div>
-                    <p class="text-[#181111] text-base font-medium leading-normal">
-                      Warehousing
-                    </p>
-                    <p class="text-[#896161] text-sm font-normal leading-normal">
-                      Secure and efficient warehousing solutions for your goods.
-                    </p>
-                  </div>
+              <!-- Card 3 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full aspect-video bg-cover bg-center rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi0lF_9tns3H65BcAxzKelDaV-42Ffaezm8uciixSqbRHJH9-Tk27vwecbpI0sU1HnJ8JDW5Bn-PuljbJ6DgR7MjkE5_oRgJFX6_n4gWgLxb189E3slTNQnaqpmZxTtae3RCpbJY3lv_TTtS-pkGQMUZ1cIoTQfA-D4t1jX1c8km6dT3MzWYdPh9hGYfoFG4CqCYBg0B7YecehP8H5gFyTFDnccz74cxFQg9dtcz021lw92RK3N2DFp5dpUVramAbQE_vNjV7P_Mpl");'></div>
+                <div>
+                  <p class="text-[#181111] font-medium">Air Freight</p>
+                  <p class="text-[#896161] text-sm">Fast and dependable air freight services for time-sensitive shipments.</p>
                 </div>
+              </div>
 
-                <!-- Card 2 -->
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMZA39JxZrghang0RWlWGamHSmjkDbYxk4enFJmjuVTEE61Ttrm69Sr0mopk-s6_5xoYGwjomuHZYoPQn8gcpmKHfW2Pr6WB_YeZKKgGljWrdp6poGjM02Tk6QKkvYiRDhcoGNZvwYFUH1_ezvcgMR8cHExOzmxSZ_fpLgSTkn0ex4Yydr3ykhDd3KzobIrT-v-FM_bSk_BgX6kR3tfQ9LV1aqyx_UgAPsynYzXOS7Z__IKDyi1tN8QU7GRT0LsDiNiHXmwVqq1rXR");'
-                  ></div>
-                  <div>
-                    <p class="text-[#181111] text-base font-medium leading-normal">
-                      Ocean Freight
-                    </p>
-                    <p class="text-[#896161] text-sm font-normal leading-normal">
-                      Reliable and cost-effective ocean freight services to
-                      global destinations.
-                    </p>
-                  </div>
+              <!-- Card 4 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full aspect-video bg-cover bg-center rounded-xl" style='background-image: url("USED-CARS.jpg");'></div>
+                <div>
+                  <p class="text-[#181111] font-medium">Used Car Clearance</p>
+                  <p class="text-[#896161] text-sm">Your trusted partner for smooth and reliable used car clearance.</p>
                 </div>
+              </div>
 
-                <!-- Card 3 -->
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi0lF_9tns3H65BcAxzKelDaV-42Ffaezm8uciixSqbRHJH9-Tk27vwecbpI0sU1HnJ8JDW5Bn-PuljbJ6DgR7MjkE5_oRgJFX6_n4gWgLxb189E3slTNQnaqpmZxTtae3RCpbJY3lv_TTtS-pkGQMUZ1cIoTQfA-D4t1jX1c8km6dT3MzWYdPh9hGYfoFG4CqCYBg0B7YecehP8H5gFyTFDnccz74cxFQg9dtcz021lw92RK3N2DFp5dpUVramAbQE_vNjV7P_Mpl");'
-                  ></div>
-                  <div>
-                    <p class="text-[#181111] text-base font-medium leading-normal">
-                      Air Freight
-                    </p>
-                    <p class="text-[#896161] text-sm font-normal leading-normal">
-                      Fast and dependable air freight services for
-                      time-sensitive shipments.
-                    </p>
-                  </div>
+              <!-- Card 5 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full aspect-video bg-cover bg-center rounded-xl" style='background-image: url("USED-PARTS.jpeg");'></div>
+                <div>
+                  <p class="text-[#181111] font-medium">Used Parts</p>
+                  <p class="text-[#896161] text-sm">Khan Brothers offers reliable sourcing and supply of quality used auto parts.</p>
                 </div>
+              </div>
 
-                <!-- Card 4 -->
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("USED-CARS.jpg");'
-                  ></div>
-                  <div>
-                    <p class="text-[#181111] text-base font-medium leading-normal">
-                      Used Car Clearance
-                    </p>
-                    <p class="text-[#896161] text-sm font-normal leading-normal">
-                       Your trusted partner for smooth and reliable used car clearance.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("USED-PARTS.jpeg");'
-                  ></div>
-                  <div>
-                    <p class="text-[#181111] text-base font-medium leading-normal">
-                      Used Parts
-                    </p>
-                    <p class="text-[#896161] text-sm font-normal leading-normal">
-                      Khan Brothers offers reliable sourcing and supply of quality used auto parts.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("Machineries.jpg");'
-                  ></div>
-                  <div>
-                    <p class="text-[#181111] text-base font-medium leading-normal">
-                      Machineries
-                    </p>
-                    <p class="text-[#896161] text-sm font-normal leading-normal">
-                    From import to clearance, we handle used machinery with ease.
-                    </p>
-                  </div>
+              <!-- Card 6 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full aspect-video bg-cover bg-center rounded-xl" style='background-image: url("Machineries.jpg");'></div>
+                <div>
+                  <p class="text-[#181111] font-medium">Machineries</p>
+                  <p class="text-[#896161] text-sm">From import to clearance, we handle used machinery with ease.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer
-              class="flex flex-col gap-6 px-5 py-10 text-center @container"
-            >
-              <!-- <div
-                class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around"
-              >
-                <a
-                  class="text-[#896161] text-base font-normal leading-normal group min-w-40"
-                  href="#"
-                  >Privacy Policy</a
-                >
-                <a
-                  class="text-[#896161] text-base font-normal leading-normal group min-w-40"
-                  href="#"
-                  >Terms of Service</a
-                >
-              </div> -->
-              <p class="text-[#896161] text-base font-normal leading-normal">
-                © 2024 KHAN BROTHERS. All rights reserved.
-              </p>
-            </footer>
-          </div>
-        </footer>
       </div>
+
+      <!-- Footer -->
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-4 md:px-10 py-6 text-center">
+            <p class="text-[#896161] text-base">© 2024 KHAN BROTHERS. All rights reserved.</p>
+          </footer>
+        </div>
+      </footer>
     </div>
+
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
-
